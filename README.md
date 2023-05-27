@@ -28,7 +28,7 @@ Stable Diffusion webui部署在个人PC上，PC在美国，sdweb-mulit-user-webs
 	SSL_CA_FILE SSL域名证书文件
 	SSL_CA_KEY_FILE域名证书key文件
 	WARRING_ALERT_INFO 警告提醒，如果为空不会打开弹出警告提醒
-	REMOTE_STABLE_DIFFUSION_SERVER_ADDRESS  特别注意：这个协商你的stable-diffusion-webui 地址例如:http://127.0.0.1:7890 ，建议修改这个端口并加上IP白名单策略，不要让其他人访问到127.0.0.1:7890而带来安全隐患。
+	REMOTE_STABLE_DIFFUSION_SERVER_ADDRESS  特别注意：这个协商你的stable-diffusion-webui 地址例如:http://127.0.0.1:7860 ，建议修改这个端口并加上IP白名单策略，不要让其他人访问到127.0.0.1:7860而带来安全隐患。
 
 2.stable-diffusion-webui开启API， 在启动参数加上 `--api` （必须加上）
 或者webui-user.bat 中设置为 set COMMANDLINE_ARGS="`--api`"
