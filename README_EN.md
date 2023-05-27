@@ -26,7 +26,7 @@ For the first time use, please modify sdweb-server/config/setting.py
 	SSL_CA_FILE SSL domain name certificate file 
 	SSL_CA_KEY_FILE domain name certificate key File 
 	WARRING_ALERT_INFO Warning reminder, if it is empty, it will not open a pop-up warning reminder 
-	REMOTE_STABLE_DIFFUSION_SERVER_ADDRESS Special attention: this negotiates your stable-diffusion-webui address For example: http://127.0.0.1:7890, it is recommended to modify this port and add an IP whitelist Policy, do not allow other people to access 127.0.0.1:7890 and bring security risks.  
+	REMOTE_STABLE_DIFFUSION_SERVER_ADDRESS Special attention: this negotiates your stable-diffusion-webui address For example: http://127.0.0.1:7860, it is recommended to modify this port and add an IP whitelist Policy, do not allow other people to access 127.0.0.1:7860 and bring security risks.  
 ``` 
 If you are using the qiuye Launcher, please select "Enable API" in the advanced options
 
