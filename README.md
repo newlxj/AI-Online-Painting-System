@@ -3,6 +3,7 @@
 ## 介绍
 Sdweb Mulit User Website是基于[AUTOMATIC1111](https://github.com/AUTOMATIC1111 "AUTOMATIC1111") API二次开发的平台，在这个平台上提供了用户账号注册，多用户在线绘画、评分、共享及模型管理等功能，并提供tag自动推荐，在用户不具备AI技能情况下自动推荐很好的tag
 
+示例站点：https://ai8.live
 
 ## 软件架构
 Python 3.10
@@ -12,7 +13,7 @@ Flask 2.2.3
 ## 跨网络解及安全决方案
 本项目支持Stable Diffusion Stable Diffusion webui部署在个人PC上，PC在法国，sdweb-mulit-user-website 在新加坡，只要Stable Diffusion webui
 主机与sdweb-mulit-user-website 在不同国家地域网络,例如：
-
+![Network-Architecture-Diagram](https://github.com/newlxj/sdweb-multi-user-website/blob/d736f37253ddc656e1285798beb2b431794dc603/images/Network-Architecture-Diagram.png?raw=true "Network-Architecture-Diagram")
 Stable Diffusion webui部署在个人PC上，PC在美国，sdweb-mulit-user-website 在新加坡，只要Stable Diffusion webui能被新加坡服务器访问到，sdweb-mulit-user-website面对使用的客户将只知道他们访问的是新加坡服务器，这样有效避免了黑客攻击等情况。
 
 对于安全方便，我们对客户端用户请求的内容进行了AES加密，每次用户登录会颁发不同的密钥，使得即使没有SSL链路情况下数据传输也是安全的。
@@ -66,9 +67,30 @@ stable-diffusion-webui 在启动参数加上 --api （必须加上）
 	startPordServer.bat
 访问地址：http://127.0.0.1 (端口80) 可以配置80和443端口双开
 
+##使用教程
+1.登录
+![登录](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/login.png?raw=true =400x500)
+2.进入创作模式
+![](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/img1.png?raw=true  =400x500)
+![](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/img2.png?raw=true  =400x500)
+3.选择模型
+![](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/img4.png?raw=true)
+设置模型
+开启超级模式后，使用快捷键`alt+p` 快捷键会自动弹出stable diffusion 模型选择清单，你可以放缩略图，建议宽高 w512*h256
+图片存放是相对路径，例如：modelLogo/counterfeitV2525d.png
+![](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/img8.png?raw=true)
+4.设置高级参数
 
 
-##如果你喜欢，请给我一个star用来鼓励我带来更多开源作品
+5.使用随机tag
+
+6.生成图片
+
+7.查看图片
+
+8.共享图片
+
+### 如果你喜欢，请给我一个star用来鼓励我带来更多开源作品
 
 #### 参与贡献
 
