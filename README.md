@@ -1,7 +1,7 @@
 # sdweb-mulit-user-website
 ![github](https://github.com/newlxj/sdweb-multi-user-website/blob/dev/images/img11.png?raw=true "github")
 
-![gitee](https://gitee.com/aliu/sdweb-multi-user-website/raw/main/images/img11.png "gitee")
+![gitee](https://gitee.com/aliu/sdweb-multi-user-website/raw/main/images/img12.png "gitee")
 
 
 
