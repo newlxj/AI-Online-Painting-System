@@ -1,0 +1,7 @@
+Flask==2.2.3
+pycryptodome==3.17
+Crypto==1.4.1
+sqlalchemy==2.0.9
+Pillow==9.5.0
+gevent==22.10.2
+flask_cors==3.0.10
