@@ -1,17 +1,28 @@
 # sdweb-mulit-user-website
+![github](https://github.com/newlxj/sdweb-multi-user-website/blob/dev/images/img11.png?raw=true "github")
 
-It is very important to use the introduction picture below, if you can’t see it, you can go to the domestic gitee site
-https://gitee.com/aliu/sdweb-multi-user-website
+![gitee](https://gitee.com/aliu/sdweb-multi-user-website/raw/main/images/img11.png "gitee")
+
 
 ## introduce
 Sdweb Mulit User Website is a platform based on the secondary development of [AUTOMATIC1111](https://github.com/AUTOMATIC1111 "AUTOMATIC1111") API. On this platform, it provides user account registration, multi-user online drawing, scoring, sharing and models Management and other functions, and provide tag automatic recommendation, automatically recommend good tags when users do not have AI skills
 
-(The code is being uploaded and will be completed before June 1st, please fork and star in advance, thank you)
+If you like it, please fork and star, thank you
 
-Demo site: https://ai8.live
+DEMO site: https://ai8.live
+
+## comminicate
+It is very important to use the introduction picture below, if you can’t see it, you can go to the domestic gitee site
+https://gitee.com/aliu/sdweb-multi-user-website
+
+github: https://github.com/newlxj/sdweb-Multi-User-Website
+StableDiffusion-Ai8If you have any questions, please communicate 
+in the QQ group: 793072950
+
 
 ## Software Architecture
 Python 3.10
+
 Flask 2.2.3
 
 
@@ -19,9 +30,9 @@ Flask 2.2.3
 This project supports Stable Diffusion Stable Diffusion webui deployed on personal PC, PC in France, sdweb-mulit-user-website in Singapore, as long as Stable Diffusion webui
 The host and sdweb-mulit-user-website are in different countries and regions, for example:
 ![Network-Architecture-Diagram](https://github.com/newlxj/sdweb-multi-user-website/blob/d736f37253ddc656e1285798beb2b431794dc603/images/Network-Architecture-Diagram.png?raw=true "Network-Architecture-Diagram ")
-The Stable Diffusion webui is deployed on a personal PC, the PC is in the United States, and the sdweb-mulit-user-website is in Singapore. As long as the Stable Diffusion webui can be accessed by the Singapore server, the customers who use the sdweb-mulit-user-website will only know them The Singapore server is accessed, which effectively avoids hacker attacks and other situations.
+Stable Diffusion webui is deployed on a personal PC, PC Server is in Frankfurt, and sdweb-mulit-user-website is deployed in a computer room in the United States. As long as Stable Diffusion webui can be accessed by China, Singapore, and all over the world, sdweb-mulit-user-website will face Customers who use it will only know that they are visiting a US server, which effectively avoids hacking and other situations.
 
-For security and convenience, we encrypt the content requested by the client user with AES, and issue a different key each time the user logs in, making data transmission safe even without an SSL link.
+In terms of security, we perform AES encryption on the content requested by the client user, and issue a different key each time the user logs in, making data transmission safe even without an SSL link.
 
 ## Configuration Tutorial
 1.sdweb is the project web project, sdweb-server is the project Python project
@@ -69,13 +80,18 @@ If you are using the Autumn Leaf Launcher, please check "Enable API" in the adva
 ### Start the service
 #### Start the development environment
 	startDevServer.bat
-Access address: http://127.0.0.1:9999
+Access address: http://127.0.0.1
 #### Start the production environment (generally the formal environment runs stably)
 	startPordServer.bat
 Access address: http://127.0.0.1 (port 80) can be configured to open both ports 80 and 443
 
 ## Tutorial
 1. Login
+ 
+Default administrator account: ai8@gmail.com Password: 1234QWER If you need to modify it, please use the sqllite tool to open the sdai.db database file of sdweb-server, and modify the account password in user
+
+Recommended database opening tool: SQLite Expert (https://www.sqliteexpert.com/download.html)
+
 ![Login](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/login.png?raw=true)
 2. Enter creative mode
 ![](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/img1.png?raw=true)
@@ -117,5 +133,3 @@ Image storage is a relative path, for example: modelLogo/counterfeitV2525d.png
 #### Contribute
 
 You are welcome to build together to create a more powerful and personalized stable diffusion
-
-

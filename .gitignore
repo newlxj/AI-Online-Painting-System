@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+sdweb-server/ai8-env
 build/
 develop-eggs/
 dist/

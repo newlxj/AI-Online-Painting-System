@@ -1,31 +1,43 @@
 # sdweb-mulit-user-website
+![github](https://github.com/newlxj/sdweb-multi-user-website/blob/dev/images/img11.png?raw=true "github")
 
-下方使用介绍图很重要，如果看不见可以去国内gitee站点
-https://gitee.com/aliu/sdweb-multi-user-website
+![gitee](https://gitee.com/aliu/sdweb-multi-user-website/raw/main/images/img11.png "gitee")
 
-有问题请在QQ群：793072950 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=HUcEcepjpCOulnypuKkmHTx_zIpdy0jv&jump_from=webapi&authKey=3AO/lRIb4uXRBu56Wh19vryYKHIoblAf+cKDAcxmCtKyFWJqsbZ5PWjG9Y9nAZz8"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="StableDiffusion-Ai8" title="StableDiffusion-Ai8"></a>咨询
+
 
 ## 介绍
 Sdweb Mulit User Website是基于[AUTOMATIC1111](https://github.com/AUTOMATIC1111 "AUTOMATIC1111") API二次开发的平台，在这个平台上提供了用户账号注册，多用户在线绘画、评分、共享及模型管理等功能，并提供tag自动推荐，在用户不具备AI技能情况下自动推荐很好的tag
 
-（代码正在整理上传中，将在6月1日前完成,请提前fork和star，谢谢）
+如果喜欢请fork和star，谢谢
 
-示例站点：https://ai8.live
+DEMO 站点：https://ai8.live
+
+## 交流
+下方使用介绍图很重要，如果看不见可以去国内gitee站点
+https://gitee.com/aliu/sdweb-multi-user-website
+
+github：https://github.com/newlxj/sdweb-Multi-User-Website
+
+有问题请在QQ群：793072950 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=HUcEcepjpCOulnypuKkmHTx_zIpdy0jv&jump_from=webapi&authKey=3AO/lRIb4uXRBu56Wh19vryYKHIoblAf+cKDAcxmCtKyFWJqsbZ5PWjG9Y9nAZz8"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="StableDiffusion-Ai8" title="StableDiffusion-Ai8"></a>交流
+
 
 ## 软件架构
 Python 3.10
+
 Flask 2.2.3
 
 
 ## 跨网络解及安全决方案
 本项目支持Stable Diffusion Stable Diffusion webui部署在个人PC上，PC在法国，sdweb-mulit-user-website 在新加坡，只要Stable Diffusion webui
 主机与sdweb-mulit-user-website 在不同国家地域网络,例如：
-![Network-Architecture-Diagram](https://github.com/newlxj/sdweb-multi-user-website/blob/d736f37253ddc656e1285798beb2b431794dc603/images/Network-Architecture-Diagram.png?raw=true "Network-Architecture-Diagram")
-Stable Diffusion webui部署在个人PC上，PC在美国，sdweb-mulit-user-website 在新加坡，只要Stable Diffusion webui能被新加坡服务器访问到，sdweb-mulit-user-website面对使用的客户将只知道他们访问的是新加坡服务器，这样有效避免了黑客攻击等情况。
+![Network-Architecture-Diagram](https://github.com/newlxj/sdweb-multi-user-website/blob/dev/images/Network-Architecture-Diagram.png?raw=true "Network-Architecture-Diagram")
+Stable Diffusion webui部署在个人PC上，PC Server在法兰克福，sdweb-mulit-user-website部署在美国机房，只要Stable Diffusion webui能被中国、新加坡、全球各地访问到，sdweb-mulit-user-website面对使用的客户将只知道他们访问的是美国服务器，这样有效避免了黑客攻击等情况。
 
-对于安全方便，我们对客户端用户请求的内容进行了AES加密，每次用户登录会颁发不同的密钥，使得即使没有SSL链路情况下数据传输也是安全的。
+对于安全方面，我们对客户端用户请求的内容进行了AES加密，每次用户登录会颁发不同的密钥，使得即使没有SSL链路情况下数据传输也是安全的。
 
 ## 配置教程
+1.请部署https://github.com/AUTOMATIC1111 可以使用github官方部署方式或使用qiuye一键部署
+
 1.sdweb 是项目web工程 ，sdweb-server是项目Python工程
 第一次使用，请修改 sdweb-server/config/setting.py
 
@@ -71,13 +83,18 @@ python webui.py   --opt-sdp-attention --no-gradio-queue --device-id=0 --no-half-
 ### 启动服务
 #### 启动开发环境
 	startDevServer.bat
-访问地址：http://127.0.0.1:9999
+访问地址：http://127.0.0.1
 #### 启动生产环境（一般正式环境运行稳定）
 	startPordServer.bat
 访问地址：http://127.0.0.1 (端口80) 可以配置80和443端口双开
 
 ## 使用教程
 1.登录
+ 
+默认管理员账号：ai8@gmail.com  密码：1234QWER   如果需要修改请用sqllite工具打开sdweb-server的sdai.db 数据库文件，修改user中的账号密码
+
+数据库打开工具推荐使用：SQLite Expert （https://www.sqliteexpert.com/download.html）
+
 ![登录](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/login.png?raw=true)
 2.进入创作模式
 ![](https://github.com/newlxj/sdweb-multi-user-website/blob/main/images/img1.png?raw=true)
