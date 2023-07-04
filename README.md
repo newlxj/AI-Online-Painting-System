@@ -1,6 +1,6 @@
 # sdweb-mulit-user-website
 |
- [简体中文](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README_ZH.md "简体中文") | [English](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README.md "English")
+ [简体中文](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README.md "简体中文") | [English](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README_EN.md "English")
 
 
 
