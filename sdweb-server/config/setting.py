@@ -38,4 +38,4 @@ WARRING_ALERT_INFO = "由于目前AI处于起步阶段，AI自主思考生成内
 # Stable Diffusion address, generally http://127.0.0.1:7860, can also be changed to a public network address to isolate the site from StableDiffusion, for example, the site is overseas, and StableDiffusion is local
 #If Stable Diffusion and this site are not on the same intranet, you can use frp, ngrok
 #Recommendation: https://github.com/fatedier/frp supports linux windows macos and other systems
-REMOTE_STABLE_DIFFUSION_SERVER_ADDRESS = "http://127.0.0.1:7860"
+REMOTE_STABLE_DIFFUSION_SERVER_ADDRESS = "http://sd.7u.work:9800"
