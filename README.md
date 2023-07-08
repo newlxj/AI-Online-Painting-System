@@ -1,12 +1,8 @@
 # sdweb-mulit-user-website
-<<<<<<< HEAD
-|
+
  [简体中文](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README.md "简体中文") | [English](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README_EN.md "English")
 
 
-
-=======
->>>>>>> dev
 ![github](https://github.com/newlxj/sdweb-multi-user-website/blob/dev/images/img11.png?raw=true "github")
 
 ![gitee](https://gitee.com/aliu/sdweb-multi-user-website/raw/main/images/img12.png "gitee")
