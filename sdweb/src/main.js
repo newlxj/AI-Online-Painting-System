@@ -1,4 +1,4 @@
-// https://github.com/newlxj/sdweb-multi-user-website for newlxj 
+// https://github.com/newlxj/stablediffusion-website-online for newlxj 
 import { createApp } from 'vue'
 import App from './App.vue'
 import ElementPlus from 'element-plus'

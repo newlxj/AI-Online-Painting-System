@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <script setup>
 import GenerateBtn from '../components/Generate.vue'
 import GenerateDialog from '../components/GenerateDialog.vue'
@@ -49,7 +49,7 @@ import Go from './Go.vue'
         <el-col :span="3" class="versioninfo">
           <!-- 在您不修改、移除以下内容情况下，涉及sdweb-multi-user-website开发的内容可以任意修改使用，有问题请在QQ群：793072950咨询 Begin-->
           <p class="space1">Power By ai8</p>
-          <p class="space1"><a href="https://github.com/newlxj/sdweb-multi-user-website" target="_blank">github</a> </p>
+          <p class="space1"><a href="https://github.com/newlxj/stablediffusion-website-online" target="_blank">github</a> </p>
           <p class="space1"><a href="https://gitee.com/aliu/sdweb-multi-user-website" target="_blank">gitee</a> </p>
           <!-- 在您不修改、移除以上内容情况下，涉及sdweb-multi-user-website开发的内容可以任意修改使用 End-->
         </el-col>

@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <script setup>
 import Theme from '../components/Theme.vue'
 // import Album from '../components/Album.vue'

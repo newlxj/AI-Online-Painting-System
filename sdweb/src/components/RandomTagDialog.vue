@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template>
   <div>
     <!-- <el-button type="primary" @click="showDialog">打开对话框</el-button> -->

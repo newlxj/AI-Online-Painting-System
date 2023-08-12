@@ -1,4 +1,4 @@
-// https://github.com/newlxj/sdweb-multi-user-website for newlxj 
+// https://github.com/newlxj/stablediffusion-website-online for newlxj 
 import { createRouter, createWebHistory } from "vue-router";  //导入路由
 import Cookies from "js-cookie";
 const routes = [

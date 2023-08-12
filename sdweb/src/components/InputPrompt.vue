@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template  >
     <el-tooltip class="box-item" effect="dark" content="说出你想要画的内容，说的越详细图画越近似，可以通过拆成多个英文描述词以逗号分割进行描述" placement="top-start">
         <span class="demonstration" style="line-height:  30pt;">希望出现的内容
@@ -7,7 +7,7 @@
     </el-tooltip>
     <el-tooltip class="box-item" effect="dark" content="随机从aitag.top抽取抽签魔导师魔法" placement="top-start">
         <el-switch v-model="randomPrompt" class="ml-2" inline-prompt size="large"
-            style="--el-switch-on-color:  #ff4949; --el-switch-off-color:#13ce66" active-text="手动输入" inactive-text="随机抽签"
+            style="--el-switch-on-color:  #17c8cb; --el-switch-off-color:#13ce66" active-text="随机抽签" inactive-text="手动输入"
             @change="switchRandomPrompt" />
     </el-tooltip>
 
@@ -30,8 +30,8 @@
         <a href="https://wolfchen.top/tag/" target="_blank">wolfchen tag</a>&nbsp;&nbsp; ，或者开启随机抽签随机抽一组词
         <el-tooltip class="box-item" effect="dark" content="随机从aitag.top抽取抽签魔导师魔法" placement="top-start">
             <el-switch v-model="randomPrompt" class="ml-2" inline-prompt size="large"
-                style="--el-switch-on-color:  #ff4949; --el-switch-off-color:#13ce66" active-text="手动输入"
-                inactive-text="随机抽签" @change="switchRandomPrompt" />
+                style="--el-switch-on-color:  #ff4949; --el-switch-off-color:#13ce66" active-text="随机抽签"
+                inactive-text="手动输入" @change="switchRandomPrompt" />
         </el-tooltip>
         <p>如果需要lora，可以使用 &lt;lora:名称:1&gt;</p>
         <el-input class="inputcss" v-model="prompt" type="textarea" :autosize="{ minRows: 4, maxRows: 10 }" maxlength="1000"

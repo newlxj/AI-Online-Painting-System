@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <script setup>
 import Login from '../page/Login.vue'
 </script >
@@ -20,7 +20,7 @@ import Login from '../page/Login.vue'
 
                 <p>本站系统已在github开源</p>
                 <p>当前平台共创作{{ allImageCount }}张杰作，期待你的创作及与大家分享</p>
-                <p>4090免费算力平台</p>
+                <p>AI绘画算力平台</p>
                 <p v-if="userid != '' && userid != null">当前登录账号{{ userid }} <el-button type="danger"
                         @click="logout">退出</el-button></p>
             </el-col>

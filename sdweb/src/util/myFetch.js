@@ -1,4 +1,4 @@
-// https://github.com/newlxj/sdweb-multi-user-website for newlxj 
+// https://github.com/newlxj/stablediffusion-website-online for newlxj 
 import { encryptJsonToStr, decryptStrToJson } from './crypto'
 import { SERVER_DOMAIN } from '../Config.vue'
 import Cookies from "js-cookie";

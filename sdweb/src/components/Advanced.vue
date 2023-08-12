@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template  >
     <el-row>
         <el-col :span="18" :offset="1">
@@ -62,7 +62,7 @@
                 <span class="demonstration" style="line-height: 30pt;">生成批次
                     <el-icon class="header-icon"><info-filled /></el-icon></span>
             </el-tooltip>
-            <el-slider v-model="imageBatchCount" show-input :min=1 :max=2 />
+            <el-slider v-model="imageBatchCount" show-input :min=1 :max=20 />
         </el-col>
     </el-row>
     <el-row>
@@ -76,7 +76,7 @@
                 <el-tooltip class="box-item" effect="dark" content="Left Top prompts info" placement="top-start">
                 </el-tooltip>
             </span>
-            <el-slider v-model="imageBatchSize" show-input :min=1 :max=2 />
+            <el-slider v-model="imageBatchSize" show-input :min=1 :max=20 />
         </el-col>
     </el-row>
 </template>

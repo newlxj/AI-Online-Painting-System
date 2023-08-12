@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template>
     <el-dialog class="dialogCss" v-model="dialogVisible" title="登录-Sign in" align-center :close-on-click-modal="false"
         :show-close="false" before-close="false">

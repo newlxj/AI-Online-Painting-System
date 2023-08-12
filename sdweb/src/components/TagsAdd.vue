@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template>
     <el-tag v-for="(tag, index) in tags" :key="index" closable @close="removeTag(index)" @click="editTag(index)"
         :style="tagStyle">

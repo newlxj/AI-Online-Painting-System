@@ -1,5 +1,5 @@
 
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <script setup>
 import InputPrompt from '../components/InputPrompt.vue'
 import Advanced from '../components/Advanced.vue'

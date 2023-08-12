@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template>
     <span class="demonstration" style="line-height: 30pt;">
         <el-button :type="createImagesBtnType" :size="large" :disabled="createImagesBtnDisabled" @Click="createSubmit"
@@ -106,7 +106,7 @@ export default {
 
 
             //调用
-            if (imgData.prompt == "") {
+            if (imgData.prompt == "" &&  this.randomPrompt) {
                 ElMessageBox.alert('绘画内容描述中-希望出现的内容没有填写-No input prompt', '有内容没填写-No input prompt', {
                     // if you want to disable its autofocus
                     // autofocus: false,

@@ -1,4 +1,4 @@
-// https://github.com/newlxj/sdweb-multi-user-website for newlxj 
+// https://github.com/newlxj/stablediffusion-website-online for newlxj 
 import CryptoJS from 'crypto-js';
 import md5 from 'js-md5';
 import Cookies from "js-cookie";

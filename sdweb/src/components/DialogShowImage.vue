@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template>
     <el-dialog v-model="imgageShowDialogVisible" title="图片预览" width="85vw" center>
         <div>

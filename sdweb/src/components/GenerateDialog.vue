@@ -1,4 +1,4 @@
-<!-- https://github.com/newlxj/sdweb-multi-user-website for newlxj -->
+<!-- https://github.com/newlxj/stablediffusion-website-online for newlxj -->
 <template>
     <el-drawer v-model="createImageDialog" size="70%" title="正在生成中..." :direction="createImageDialogType">
         <span>请稍等..</span>
