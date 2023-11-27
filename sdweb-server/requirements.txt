@@ -1,4 +1,4 @@
-Flask==2.2.3
+Flask==2.3.3
 pycryptodome==3.17
 Crypto==1.4.1
 sqlalchemy==2.0.9
