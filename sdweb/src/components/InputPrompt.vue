@@ -14,7 +14,7 @@
     <div class="slider-demo-block">
         <el-input v-show="promptIsShow" :autosize="{ minRows: 4, maxRows: 10 }" v-model="prompt" maxlength="1000"
             @change="promptChange" placeholder="描述希望图片出现的内，多个词用逗号分隔，比如1个女孩，靠在窗边，用英文表示：1girl,against table，词汇越多，细节会越靠近"
-            show-word-limit type="textarea" />
+            show-word-limit type="textarea" @click="dialogVisible = true" />
     </div>
     <el-tooltip class="box-item" effect="dark" content="如果图片中出现不想要的内容，在此指出哪里有问题，比如手有问题说手坏了，人物没有头发，说没有头发"
         placement="top-start">
@@ -62,7 +62,7 @@ export default {
             negative_prompt: DEFAULT_NAGATIVE_PROMPT,
             randomPrompt: false,
             promptIsShow: true,
-            dialogVisible: false
+            dialogVisible: true
         }
     },
     created() {
