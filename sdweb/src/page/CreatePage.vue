@@ -16,14 +16,12 @@ import Go from './Go.vue'
     <el-header class="header">
       <!-- 头部内容 -->
       <div class="logo-1">
-
+        ai painting
       </div>
-    <a href="../page/web/zhandian.htm" target="_blank">网站使用指南</a>
     </el-header>
     <el-aside class="aside">
-      <div class="generate-btn-wrapper">
-        <GenerateBtn />
-    </div>
+      <!-- 侧边栏内容 -->
+      <Theme />
       <Go />
     </el-aside>
     <el-main class="main">
@@ -37,10 +35,23 @@ import Go from './Go.vue'
     <el-footer class="footer">
       <!-- 底部内容 -->
       <el-row :gutter="16">
-        <el-col :span="24">
+        <el-col :span="7">
           <el-aside>
+            <GenerateBtn />
             <GenerateDialog />
           </el-aside>
+        </el-col>
+        <el-col :span="7">
+          <!-- <el-progress :percentage="processCount" :format="processTabFormat" /> -->
+          <el-progress :percentage="processCount" :stroke-width="12" striped striped-flow :duration="duration"
+            :format="processTabFormat" color="#e6a23c" />
+        </el-col>
+        <el-col :span="3" class="versioninfo">
+          <!-- 在您不修改、移除以下内容情况下，涉及sdweb-multi-user-website开发的内容可以任意修改使用，有问题请在QQ群：793072950咨询 Begin-->
+          <p class="space1">Power By ai8</p>
+          <p class="space1"><a href="https://github.com/newlxj/stablediffusion-website-online" target="_blank">github</a> </p>
+          <p class="space1"><a href="https://gitee.com/aliu/sdweb-multi-user-website" target="_blank">gitee</a> </p>
+          <!-- 在您不修改、移除以上内容情况下，涉及sdweb-multi-user-website开发的内容可以任意修改使用 End-->
         </el-col>
       </el-row>
     </el-footer>
@@ -168,6 +179,7 @@ a:hover {
 .header {
   text-align: center;
   line-height: 50px;
+  background-color: #409EFF;
   position: fixed;
   top: 0;
   left: 0;
@@ -180,53 +192,28 @@ a:hover {
   position: fixed;
   left: 0;
   top: 50px;
+  bottom: 60px;
   /* 头部高度 */
-  margin-left: 5%;
-  overflow-y: auto; /* 添加滚动条 */
-  width: 45%;
+  width: 300px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* 分散对齐 */
-}
-
-/* 添加新的样式 */
-.generate-btn-wrapper {
-  text-align: center; /* 居中对齐 */
 }
 
 .main {
   overflow-y: auto;
-  margin-left: 50%;
+  margin-left: 350px;
   /* 侧边栏宽度 */
   margin-top: 50px;
   /* 头部高度 */
   margin-bottom: 50px;
   /* 底部高度 */
-  width: 45%;
 }
 
 .footer {
+  background-color: #409EFF;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* 当屏幕长宽比小于1时（竖屏）应用以下样式 */
-@media (orientation: portrait) {
-  .header, .aside, .footer, .main {
-    position: static; /* 取消固定定位，恢复文档流 */
-    width: 100%; /* 设置宽度为100% */
-    height: auto; /* 高度自适应内容 */
-    margin: 0; /* 移除外边距 */
-  }
-
-  .main {
-    overflow-y: auto; /* 如果需要滚动条 */
-  }
 }
 </style>

@@ -17,8 +17,8 @@
         </el-space>
     </div>
     <span v-if="cardList.length > 2">
-        <el-collapse :gutter="16" v-model="conllapseExpand">
-            <el-collapse-item title="更多绘画风格" name ="1">
+        <el-collapse :gutter="16">
+            <el-collapse-item title="更多绘画风格">
                 <div class="card-container">
                     <el-space wrap :size="16">
                         <el-card v-for="(item, index) in cardList.slice(2, 99)" :key="index"
@@ -93,7 +93,6 @@ export default {
         return {
             cardList: [],
             modelGridData: [],
-            conllapseExpand: ['1'],
             dialogModelSettingVisible: false,
             selectedRows: [],
             defaultSelection: [],
@@ -305,3 +304,4 @@ export default {
     font-size: 14px;
 }
 </style>
+  
