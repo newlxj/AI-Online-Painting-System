@@ -38,7 +38,7 @@ export default {
         return {
             widthx: 0,
             heightx: 0,
-            conllapseExpand: ['1']
+            conllapseExpand: ['1', '2', '3']
         }
     },
     created() {

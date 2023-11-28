@@ -3,34 +3,27 @@
 import Login from '../page/Login.vue'
 </script >
 <template>
+  <div class="container">
     <Login />
-    <div>
-        <el-row>
-            <el-col :span="8">
-                <el-card class="mode-card card-hover" @click="gotoCreateMode" :class="{ 'card-grey': gotoCreateModeClick }">
-                    <div class="mode-title">创造模式</div>
-                    <div class="mode-desc">自己创造想要的图像（建议PC端使用）</div>
-                </el-card>
-                <el-card class="mode-card card-hover" @click="gotoBrushMode" :class="{ 'card-grey': gotoBrushModeClick }">
-                    <div class="mode-title">刷图模式</div>
-                    <div class="mode-desc">适合移动端刷图玩</div>
-                </el-card>
-                当前服务器状态：<el-tag :type='isOnline ? "success" : "error"'> {{ isOnlineMsg }} </el-tag>{{ isOnline ?
-                    '尽情进行你的创作' : '浏览你的历史创作' }}
-
-                <p>本站系统已在github开源</p>
-                <p>当前平台共创作{{ allImageCount }}张杰作，期待你的创作及与大家分享</p>
-                <p>AI绘画算力平台</p>
-                <p v-if="userid != '' && userid != null">当前登录账号{{ userid }} <el-button type="danger"
-                        @click="logout">退出</el-button></p>
-            </el-col>
-            <el-col :span="2">
-                <div class="bgimg"></div>
-            </el-col>
-        </el-row>
-
+    <div class="content">
+      <el-row justify="center" align="middle">
+        <el-col :span="24">
+          <!-- 创造模式和刷图模式卡片 -->
+          <el-card class="mode-card card-hover" style="margin: auto;" @click="gotoCreateMode" :class="{ 'card-grey': gotoCreateModeClick }">
+            <div class="mode-title">画图模式</div>
+            <div class="mode-desc">建议PC端使用</div>
+          </el-card>
+          <el-card class="mode-card card-hover" style="margin: auto;" @click="gotoBrushMode" :class="{ 'card-grey': gotoCreateModeClick }">
+            <div class="mode-title">刷图模式</div>
+            <div class="mode-desc">适合移动端刷图玩</div>
+          </el-card>
+          <p v-if="userid != '' && userid != null">当前登录账号{{ userid }} <el-button type="danger" @click="logout">退出</el-button></p>
+        </el-col>
+      </el-row>
+  <p>本网站基于开源项目修改 项目地址：<a href="https://github.com/newlxj/stablediffusion-website-online">https://github.com/newlxj/stablediffusion-website-online</a></p>
     </div>
-</template >
+  </div>
+</template>
 
 <script>
 import { ElMessage, ElMessageBox } from 'element-plus'
@@ -109,6 +102,17 @@ export default {
 </script>
   
 <style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 设置高度以铺满整个屏幕 */
+}
+
+.content {
+  text-align: center;
+}
+
 .bgimg {
     background-image: url('../assets/bg.jpg');
     background-size: 110% 100%;

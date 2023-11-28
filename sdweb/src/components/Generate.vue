@@ -28,7 +28,7 @@ let selectModel = {}
 export default {
     data() {
         return {
-            createImagesBtnTxt: "Generate(生成)",
+            createImagesBtnTxt: "开始生成",
             createImagesBtnType: "warning",
             createImagesBtnDisabled: false,
             createRunning: false,

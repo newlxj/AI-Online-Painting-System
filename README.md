@@ -3,11 +3,13 @@
  [简体中文](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README.md "简体中文") | [English](https://github.com/newlxj/sdweb-multi-user-website/blob/main/README_EN.md "English")
 
 
-![github](https://github.com/newlxj/sdweb-multi-user-website/blob/dev/images/img11.png?raw=true "github")
+![065fec65396167f4b9141c4c988d2a23](https://github.com/assassinliujie/stablediffusion-website-online/assets/68693675/f4ab368e-7868-4339-a927-3650c482fefd)
 
-![gitee](https://gitee.com/aliu/sdweb-multi-user-website/raw/main/images/img12.png "gitee")
+![image](https://github.com/assassinliujie/stablediffusion-website-online/assets/68693675/4e5dec6e-eca8-4399-8c54-83f6b6d269bd)
 
+![image](https://github.com/assassinliujie/stablediffusion-website-online/assets/68693675/8abb1b5b-0051-48f8-a8d6-8b9399a8d733)
 
+![1473ffbbf34fa4eaf350bf4e78e8e002](https://github.com/assassinliujie/stablediffusion-website-online/assets/68693675/0ef0e4a0-1238-4c9f-a668-84372fb46201)
 
 ## 介绍
 Sdweb Mulit User Website是基于[AUTOMATIC1111](https://github.com/AUTOMATIC1111 "AUTOMATIC1111") API二次开发的平台，在这个平台上提供了用户账号注册，多用户在线绘画、评分、共享及模型管理等功能，并提供tag自动推荐，在用户不具备AI技能情况下自动推荐很好的tag
