@@ -66,6 +66,7 @@ python webui.py   --opt-sdp-attention --no-gradio-queue --device-id=0 --no-half-
 	InstallAll.bat
 
 ### 手动安装（Windows)
+flask用2.3.3
 	cd sdweb
 	npm install
 	cd sdweb-server
