@@ -67,11 +67,17 @@ python webui.py   --opt-sdp-attention --no-gradio-queue --device-id=0 --no-half-
 
 ### 手动安装（Windows)
 flask用2.3.3
+
 	cd sdweb
+ 
 	npm install
+ 
 	cd sdweb-server
+ 
 	python -m venv ai8-env
+ 
 	ai8-env\Scripts\activate.bat
+ 
 	pip install -r requirements.txt
 
 ### 手动安装（Linux）
