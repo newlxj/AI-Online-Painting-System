@@ -28,7 +28,7 @@ github：https://github.com/newlxj/sdweb-Multi-User-Website
 ## 软件架构
 Python 3.10
 
-Flask 2.2.3
+Flask 2.3.3
 
 
 ## 跨网络解及安全决方案
